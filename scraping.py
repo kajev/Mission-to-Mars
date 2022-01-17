@@ -109,6 +109,13 @@ if __name__ == "__main__":
     # If running as script, print scraped data
     print(scrape_all())
 
+
+
+if __name__ == "__main__":
+
+    # If running as script, print scraped data
+    print(scrape_all())
+
 def hemispheres(browser):
     # 1. Use browser to visit the URL 
     url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
@@ -150,9 +157,4 @@ def scrape_hemisphere(html_text):
         "img_url": sample_elem
     }
     return hemispheres
-
-if __name__ == "__main__":
-
-    # If running as script, print scraped data
-    print(scrape_all())
 
